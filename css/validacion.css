@@ -1,0 +1,109 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    background-color: #3521B5;
+}
+
+article {
+    background-color: white;
+    width: max-content;
+    height: max-content;
+    padding: 30px 90px 30px 90px;
+    box-shadow: 5px 5px 10px #211379;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+small {
+    color: rgb(243, 30, 73);
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: .7rem;
+
+}
+
+p {
+    font-size: .8rem;
+    color: gray;
+}
+
+label {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+span {
+    color: #3521B5;
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+input {
+    padding-left: 15px;
+    height: 40px;
+    width: 300px;
+    /* margin-bottom: 25px; */
+    margin-top: 5px;
+    border-radius: 20px;
+    border: 1px solid gainsboro;
+}
+
+input:focus {
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid gainsboro;
+}
+
+input::after{
+    padding-left: 15px;
+}
+
+picture {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque{
+    display: flex;
+    flex-direction: column;
+}
+
+.enviar {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    background-color: #3521B5;
+    color: white;
+    height: 40px;
+}
+
+.enviar:hover {
+    background-color: #211379;
+}
+
+::placeholder {
+    font-size: .8rem;
+    color: gray;
+}
+
+/* input:invalid {
+    border: 2px solid rgb(243, 81, 81);
+  }
+
+input:invalid:focus {
+    background-color: pink;
+  } */

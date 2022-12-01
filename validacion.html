@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="" href="./img/favicon-16x16.png">
+    <meta name="description" content="Curso de Js Avanzado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- CSS del proyecto -->
+    <link rel="stylesheet" type="text/css" href="./css/validacion.css">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>Validación de Formularios</title>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+        <article>
+        <picture>
+            <img src="./img/logo_reby.png" alt="Logo" width="120px">
+        </picture>
+        <h3>Registro</h3>
+        <p>Registrate con tu email</p>
+        <form>
+                       
+            <section class="bloque">
+                <label for="txtNombre">Nombre de usuario<span>*</span></label>
+                <input type="text" id="txtNombre" placeholder="Usuario" required minlength="4" maxlength="16">
+                <small id="valNombre"></small>
+            </section>
+            
+            <section class="bloque">
+                <label for="txtCorreo">Email<span>*</span></label>
+                <input type="text" id="txtCorreo" placeholder="mail@website.com" required>
+                <small id="valCorreo"></small>
+            </section>
+            
+            <section class="bloque">
+                <label for="txtCorreo">Contraseña<span>*</span></label>
+                <input type="password" id="password" placeholder="Min. 8 caracteres" required minlength="8">
+                <small id="valPassword"></small>
+            </section>
+            
+            <section class="bloque">
+                <label for="txtCorreo">Repetir contraseña<span>*</span></label>
+                <input type="password" id="rptPassword" placeholder="Min. 8 caracteres" required minlength="8">
+                <small id="valRptPass"></small>            
+            </section>
+            
+            <section>
+                <input class="enviar" type="button" value="Registrate" id="btnEnviar">
+            </section>
+
+        </form>
+
+    </article>
+    </main>    
+</body>
+</html>
+<script src="./js/validacion.js"></script>
