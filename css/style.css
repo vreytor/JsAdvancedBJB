@@ -32,7 +32,7 @@ h1 {
 .sesion {
     max-width: 60vw;
     height: auto;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 10px;    
 }
 
@@ -44,9 +44,9 @@ h2 {
 
 input {
     margin: 10px;
-    width: 100px;
+    width: min-content;
     height: auto;
-    padding: 5px;
+    padding: 10px;
     font-size: 1rem;
     background-color: yellow;
     color: black;
