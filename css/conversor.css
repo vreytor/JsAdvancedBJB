@@ -1,0 +1,101 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: gold;
+    
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+}
+
+article {    
+    width: 20%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(200, 180, 10, 2);
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+.conversor {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px 0;
+}
+
+.monto {
+    border: none;
+    border-bottom: solid 1px rgb(27, 27, 51);
+    margin-top: 5px;
+    border-radius: 0;
+}
+
+.monto:focus {
+    outline: none;
+    border: none;
+    border-bottom: solid 1px rgb(27, 27, 51);
+    margin-top: 5px;
+    border-radius: 0;
+}
+
+.result {
+    margin-top: 5px;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    height: 40px;
+}
+
+#btnSol-Dol, #btnDol-Sol {
+    background-color: rgb(39, 39, 61);
+    color: white;
+    border: none;
+    height: 40px;
+    margin-top: 8px;
+}
+
+#btnSol-Dol:hover, #btnDol-Sol:hover {
+    background-color: rgb(61, 61, 107);
+    color: white;
+    border: none;
+    height: 40px;
+    margin-top: 8px;
+}
+
+.botonClean {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnLimpiar {
+    max-width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 0;
+    background-color: gainsboro;
+}
+
+.btnLimpiar:hover {
+    background-color: rgb(27, 27, 51);
+    color: white;
+}
