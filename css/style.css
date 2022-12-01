@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+main {
+    min-width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+
+}
+
+h1 {
+    padding-top: 30px;
+    color: yellow;
+    font-weight: 500;
+}
+
+.menu {
+    max-width: 100vw;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.sesion {
+    max-width: 60vw;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;    
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 300;
+}
+
+input {
+    margin: 10px;
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+input:hover {
+    background: none;
+    color: white;
+    border: 1px yellow solid;
+}
