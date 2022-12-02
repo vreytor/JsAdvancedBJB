@@ -6,16 +6,22 @@ body {
     background-color: #3521B5;
 }
 
+
 article {
-    background-color: white;
-    width: max-content;
-    height: max-content;
-    padding: 30px 90px 30px 90px;
     box-shadow: 5px 5px 10px #211379;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.header {
+    flex-direction: column;
 }
 
 h3 {
     font-size: 1.2rem;
+    margin-top: 40px;
     font-weight: 500;
 }
 
@@ -27,9 +33,16 @@ small {
 
 }
 
+form {
+    flex-direction: column;
+    justify-content: center;
+
+}
+
 p {
     font-size: .8rem;
     color: gray;
+    margin-bottom: 30px;
 }
 
 label {
@@ -44,13 +57,11 @@ span {
 }
 
 input {
-    padding-left: 15px;
+    width: 100%;
     height: 40px;
-    width: 300px;
-    /* margin-bottom: 25px; */
-    margin-top: 5px;
     border-radius: 20px;
     border: 1px solid gainsboro;
+    padding-left: 15px;
 }
 
 input:focus {

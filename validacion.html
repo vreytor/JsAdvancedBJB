@@ -18,48 +18,44 @@
     <title>Validación de Formularios</title>
 </head>
 <body>
-    <header></header>
-    <nav></nav>
-    <main>
-        <article>
-        <picture>
-            <img src="./img/logo_reby.png" alt="Logo" width="120px">
-        </picture>
-        <h3>Registro</h3>
-        <p>Registrate con tu email</p>
-        <form>
-                       
-            <section class="bloque">
-                <label for="txtNombre">Nombre de usuario<span>*</span></label>
-                <input type="text" id="txtNombre" placeholder="Usuario" required minlength="4" maxlength="16">
-                <small id="valNombre"></small>
-            </section>
-            
-            <section class="bloque">
-                <label for="txtCorreo">Email<span>*</span></label>
-                <input type="text" id="txtCorreo" placeholder="mail@website.com" required>
-                <small id="valCorreo"></small>
-            </section>
-            
-            <section class="bloque">
-                <label for="txtCorreo">Contraseña<span>*</span></label>
-                <input type="password" id="password" placeholder="Min. 8 caracteres" required minlength="8">
-                <small id="valPassword"></small>
-            </section>
-            
-            <section class="bloque">
-                <label for="txtCorreo">Repetir contraseña<span>*</span></label>
-                <input type="password" id="rptPassword" placeholder="Min. 8 caracteres" required minlength="8">
-                <small id="valRptPass"></small>            
-            </section>
-            
-            <section>
-                <input class="enviar" type="button" value="Registrate" id="btnEnviar">
+    <main class="container">
+        <article class="row col-11 col-sm-10 col-md-8 col-lg-6 col-xl-5 p-5">
+            <section class="row header col-12 ">                
+                <img src="./img/logo_reby.png" alt="Logo" width="120px">                
+                <h3>Registro</h3>
+                <p>Registrate con tu email</p>
             </section>
 
-        </form>
-
-    </article>
+            <form class="row">                   
+                <section class="bloque col-12">
+                    <label for="txtNombre">Nombre de usuario<span>*</span></label>
+                    <input type="text" id="txtNombre" placeholder="Usuario" required minlength="4" maxlength="16">
+                    <small id="valNombre"></small>
+                </section>
+                
+                <section class="bloque col-12">
+                    <label for="txtCorreo">Email<span>*</span></label>
+                    <input type="email" id="txtCorreo" placeholder="mail@website.com" required>
+                    <small id="valCorreo"></small>
+                </section>
+                
+                <section class="bloque col-12">
+                    <label for="txtCorreo">Contraseña<span>*</span></label>
+                    <input type="password" id="password" placeholder="Min. 8 caracteres" required minlength="8">
+                    <small id="valPassword"></small>
+                </section>
+                
+                <section class="bloque col-12">
+                    <label for="txtCorreo">Repetir contraseña<span>*</span></label>
+                    <input type="password" id="rptPassword" placeholder="Min. 8 caracteres" required minlength="8">
+                    <small id="valRptPass"></small>            
+                </section>
+                
+                <section class="col-12">
+                    <input class="enviar" type="button" value="Registrate" id="btnEnviar">
+                </section>
+            </form>
+        </article>
     </main>    
 </body>
 </html>
