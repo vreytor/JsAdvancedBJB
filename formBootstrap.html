@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="" href="./img/favicon-16x16.png">
+    <meta name="description" content="Curso de Js Avanzado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- CSS del proyecto -->
+    <link rel="stylesheet" type="text/css" href="./css/formboot.css">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>Formulario Bootstrap</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <article class="row col-md-6 col-10 p-5">
+            <section class="row header col-12 ">                
+                <img src="./img/Hulu_Logo.png" alt="Logo" width="120px">                
+                <h3>Contacto</h3>
+                <p>Envianos un mensaje</p>
+            </section>
+
+            <form class="row g-12 needs-validation" novalidate>
+                <section class="d-flex flex-wrap">
+                    <section class="col-lg-6 col-sm-12">
+                        <label for="validationCustom01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Juan Andrés" required pattern="^[A-Z]+([\s]?[A-Za-z])*$">
+                        <small class="invalid-feedback">
+                          Ingrese un nombre válido.
+                        </small>
+                      </section>
+
+                      <section class="col-lg-6 col-sm-12">
+                        <label for="validationCustom02" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Pérez García" required pattern="^[A-Z]+([\s]?[A-Za-z])*$">
+                        <small class="invalid-feedback">
+                            Ingrese un apellido válido.
+                        </small>
+                      </section>
+                </section>
+                
+                <section class="d-flex flex-wrap">
+                    <div class="col-lg-6 col-sm-12">
+                        <label for="validationCustom02" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="validationCustom02" placeholder="user@mail.com" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                        <small class="invalid-feedback">
+                          Ingrese un correo válido.
+                        </small>
+                      </div>
+                      
+                      <div class="col-lg-6 col-sm-12">
+                        <label for="validationCustom03" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="987654321" required pattern="^[0-9]{9}$">
+                        <small class="invalid-feedback">
+                          Ingrese un telefono válido.
+                        </small>
+                      </div>
+                </section> 
+
+
+                <section class="mensaje col-md-12 d-flex">
+                  <label for="validationCustom05" class="form-label">Mensaje</label>
+                  <textarea  class="form-control" name="" id="txtMessage" cols="1" rows="6" required></textarea>
+                  <small class="invalid-feedback">
+                    Escribe tu mensaje.
+                  </small>
+                </section>
+
+                <div class="col-12">
+                  <button class="btn col-12" type="submit">Enviar</button>
+                </div>
+              </form>
+        </article>
+    </main>    
+</body>
+</html>
+<script src="./js/formboot.js"></script>

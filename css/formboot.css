@@ -1,0 +1,113 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    background-color: #333F50;
+}
+
+
+article {
+    box-shadow: 5px 5px 10px #222A35;
+    border-radius: 5px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.header {
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+small {
+    color: rgb(243, 30, 73);
+    width: 300px;
+    margin-bottom: 5px;
+    font-size: .7rem;
+
+}
+
+form {
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+p {
+    font-size: .8rem;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: .9rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+input {
+    height: 40px;
+    border-radius: 20px; 
+    border: 1px solid gainsboro ;
+    padding-left: 15px;
+}
+
+input:focus {
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid gainsboro;
+}
+
+picture {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: none;
+    background-color: #333F50;
+    color: white;
+    height: 40px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #1CE783;
+}
+
+.mensaje {
+    flex-direction: column;
+}
+
+textarea {
+    height: 80px;
+    border-radius: 2px; 
+    border: 1px solid gainsboro ;
+    padding-left: 15px;
+}
+
+::placeholder {
+    font-size: .8rem;
+    color: gainsboro;
+}
