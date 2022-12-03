@@ -29,11 +29,7 @@ span{
 }
 
 .menu {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    
+    justify-content: center;  
 }
 
 .sesion {
@@ -52,7 +48,7 @@ h2 {
 
 input {
     height: 45px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 1rem;
     background-color: #101935;
     color: white;
