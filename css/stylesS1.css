@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #101935;
+    width: 100%;
+}
+
+h1 {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    color: #E7E7E7;
+    font-weight: 700;
+}
+
+span{
+    color: #F24C00;
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: white;
+
+}
