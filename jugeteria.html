@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./css/jugueteria.css" type="text/css">
 
@@ -20,36 +20,62 @@
 </head>
 <body>
     <header>
-        <img src="./img/logo.webp" alt="logo" width="150px">
+        <img src="./img/logo.webp" alt="logo" width="100px">
     </header>
     <main class="container-fluid">
-        <article class="bloque d-flex row">
-            <section class="juguete">
+        <article class="bloque d-flex row col-lg-12 justify-content-center">
+            <section class="juguete col-lg-2 col-md-4 col-sm-6 col-10">
                 <img src="./img/monopoly_a.jpg" alt="">
-                <label for="monopolio">Cantidad de monopolys:</label>
-                <input type="number" class="monopolio" id="monopolio">
+                <label for="monopolio">Monopoly Classic</label>
+                <p class="precio">S/ 70.99</p>
+                <small>✓ Retiro en tienda</small>
+                <small>✓ Envio a domicilio</small>
+                <input type="number" class="monopolio" id="monopolio" placeholder="Consigne cantidad">
             </section>
-            <section class="juguete">
+            <section class="juguete col-lg-2 col-md-4 col-sm-6 col-10">
                 <img src="./img/ajedrez.jpg" alt="">
-                <label for="ajedrez">Cantidad de ajedrez:</label>
-                <input type="number" class="ajedrez" id="ajedrez">
+                <label for="ajedrez">Tablero de Ajedrez</label>
+                <p class="precio">S/ 78.99</p>
+                <small>✓ Retiro en tienda</small>
+                <small>✓ Envio a domicilio</small>
+                <input type="number" class="ajedrez" id="ajedrez" placeholder="Consigne cantidad">
             </section>
-            <section class="juguete">
-                <label for="lego">Cantidad de legos:</label>
-                <input type="number" class="lego" id="lego">
+            <section class="juguete col-lg-2 col-md-4 col-sm-6 col-10">
+                <img src="./img/monopoly_a.jpg" alt="">
+                <label for="lego">Legos Classic</label>
+                <p class="precio">S/ 100.99</p>
+                <small>✓ Retiro en tienda</small>
+                <small>✓ Envio a domicilio</small>
+                <input type="number" class="lego" id="lego" placeholder="Consigne cantidad">
             </section>
-            <section class="juguete">
-                <label for="damas">Cantidad de damas:</label>
-                <input type="number" class="damas" id="damas">
+            <section class="juguete col-lg-2 col-md-4 col-sm-6 col-10">
+                <img src="./img/ajedrez.jpg" alt="">
+                <label for="damas">Tablero de Damas</label>
+                <p class="precio">S/ 58.50</p>
+                <small>✓ Retiro en tienda</small>
+                <small>✓ Envio a domicilio</small>
+                <input type="number" class="damas" id="damas" placeholder="Consigne cantidad">
             </section>
-            <section class="juguete">
-                <label for="laberinto">Cantidad de laberintos:</label>
-                <input type="number" class="laberinto" id="laberinto">
+            <section class="juguete col-lg-2 col-md-4 col-sm-6 col-10">
+                <img src="./img/monopoly_a.jpg" alt="">
+                <label for="laberinto">Rompecabezas</label>
+                <p class="precio">S/ 35.00</p>
+                <small>✓ Retiro en tienda</small>
+                <small>✓ Envio a domicilio</small>
+                <input type="number" class="laberinto" id="laberinto" placeholder="Consigne cantidad">
             </section>
-            <section >
-                <p>Resultado</p>
+            <section class="juguete box-result  col-lg-2 col-md-4 col-sm-6 col-10">
+                <h4>Aprovecha los descuentos</h4>
+                <small>✓ Menos de 10 juguetes</small>
+                <small><span>3.5%</span> de dcto.</small>
+                <small>✓ De 10 a 20 juguetes</small>
+                <small><span>7%</span> de dcto.</small>
+                <small>✓ Más de 20 juguetes</small>
+                <small><span>9.5%</span> de dcto.</small>
+                       
+                <p class="resulTitle">Resultado:</p>
                 <p class="resultado" id="p_pago"></p>
-                <button id="btn_pago">Calcular</button>
+                <button id="btn_pago">Calcular</button>                
             </section>            
         </article>
     </main>
