@@ -27,3 +27,12 @@ p {
     color: white;
 
 }
+
+small {
+    color: white;
+    text-align: center;
+}
+
+.resaltado {
+    color:#F24C00;
+}
