@@ -66,13 +66,7 @@ input {
     font-size: .8rem;
 }
 
-button {
-    background-color: rgb(25, 158, 114);
-    color: white;
-    height: 2rem;
-    border: none;
-    cursor: pointer;
-}
+
 
 span {
     font-weight: 700;
@@ -104,6 +98,10 @@ button {
     margin-bottom: 5px;
     border-radius: 2rem;
     height: 2.2rem;
+    background-color: rgb(25, 158, 114);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 button:hover{
