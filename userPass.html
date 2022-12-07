@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="" href="./img/favicon-16x16.png">
+    <meta name="description" content="Curso de Js Avanzado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- CSS del proyecto -->
+    <link rel="stylesheet" type="text/css" href="./css/userPass.css">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>Formulario Bootstrap</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <article class="row col-10 col-sm-8 col-md-6 col-lg-4 p-5">
+            <section class="row header col-12 ">                
+                <img src="./img/airbnb.png" alt="Logo" width="120px">                
+                <h3>Login</h3>
+            </section>
+
+            <form class="row g-12 needs-validation" novalidate>               
+                    <section class="col-lg-12">
+                        <label for="validationCustom01" class="form-label">Usuario</label>
+                        <input type="text" id="txtUsuario" placeholder="Ingrese su nombre usuario" required>
+                        <small class="invalid-feedback">
+                          Ingrese un nombre válido.
+                        </small>
+                    </section>
+                
+                    <section class="col-lg-12">
+                        <label for="validationCustom02" class="form-label">Contraseña</label>
+                        <input type="password" id="txtPwd" placeholder="Ingrese su contraseña" required>
+                        <small class="invalid-feedback">
+                          Ingrese un correo válido.
+                        </small>
+                    </section>
+                    
+                    <section class="col-12">
+                        <button class="btn col-12" type="submit" id="btnIngresar">Ingresar</button>
+                    </section>
+            </form>
+        </article>
+    </main>    
+</body>
+</html>
+<script src="./js/userPass.js"></script>
