@@ -8,8 +8,7 @@
 header {
     margin: 20px;
     background: none;
-    padding-bottom: 20px;
-    border-bottom: 1px gainsboro solid;
+    padding-bottom: 0px;
 }
 
 body {
@@ -68,7 +67,6 @@ input {
 span {
     font-weight: 700;
     color: rgb(25, 158, 114);
-    font-size: 1.2rem;
 }
 
 .resultado {
@@ -78,7 +76,7 @@ span {
 }
 
 .resulTitle {
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 p {
@@ -90,9 +88,10 @@ p {
     justify-content: end;
 }
 
-button {
+.button {
     font-weight: 700;
     margin-bottom: 5px;
+    margin-top: 15px;
     border-radius: 2rem;
     height: 2.2rem;
     background-color: rgb(25, 158, 114);
@@ -101,7 +100,23 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+.button:hover{
     background-color: aquamarine;
     color: black;
+}
+
+.inputPagos {
+    margin-top: 5px;
+}
+
+.labelRpta {
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: .8rem;
+}
+
+section {
+    border-top: 1px solid gainsboro;
+    padding-top: 10px;
+    margin-top: 10px;
 }

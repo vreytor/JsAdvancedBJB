@@ -1,38 +1,51 @@
-const btn_pago = document.getElementById('btn_pago');
-const p_pago = document.getElementById('p_pago');
+const monopolio = document.getElementById("monopolio");
+const ajedrez = document.getElementById("ajedrez");
+const lego = document.getElementById("lego");
+const damas = document.getElementById("damas");
+const laberinto = document.getElementById("laberinto");
 
-btn_pago.addEventListener('click', calcular);
+const valorCompra = document.getElementById("compra");
+const valorDescuento = document.getElementById("descuento");
+const valorPago = document.getElementById("pago");
 
-function calcular() {
-    const monopolio = parseInt(document.getElementById('monopolio').value);
-    const ajedrez = parseInt(document.getElementById('ajedrez').value);
-    const lego = parseInt(document.getElementById('lego').value);
-    const damas = parseInt(document.getElementById('damas').value);
-    const laberinto = parseInt(document.getElementById('laberinto').value);
+const btnPago = document.getElementById("btnPago");
 
-    let p_monopolio = monopolio * 70.99;
-    let p_ajedrez = ajedrez * 78.99;
-    let p_lego = lego * 100.99;
-    let p_damas = damas * 58.50;
-    let p_laberinto = laberinto * 35;
+let precioMonopolio = 70.99;
+let precioAjedrez = 78.99;
+let precioLego = 100.99;
+let precioDamas = 58.50;
+let precioLaberinto = 35.00;
 
-    let cantidad = monopolio + ajedrez + lego + damas + laberinto;
-    let pago_i = p_monopolio + p_ajedrez + p_lego + p_damas + p_laberinto;
 
-    if (cantidad < 10) {
-        let descuento = pago_i*3.5/100;
-        let pago_f = pago_i - descuento;
+btnPago.onclick = function(){
+    /* Los principales usos del objeto Number(valor) son convertir un string
+    u otro valor a uno de tipo numérico; si el argumento no puede ser convertido
+    a un número, devuelve NaN. */
+    let cantMonopolio = Number(monopolio.value);
+    let cantAjedrez = Number(ajedrez.value);
+    let cantLego = Number(lego.value);
+    let cantDamas = Number(damas.value);
+    let cantLaberinto = Number(laberinto.value);
 
-        p_pago.innerText = pago_f.toFixed(2);
-    } else if (cantidad <= 20) {
-        let descuento = pago_i*7/100;
-        let pago_f = pago_i - descuento;
-        
-        p_pago.innerText = pago_f.toFixed(2);
+    let cantJuguetes = cantMonopolio + cantAjedrez + cantLego + cantDamas + cantLaberinto;
+
+    let costo = (cantMonopolio * precioMonopolio) + (cantAjedrez * precioAjedrez) + (cantLego * precioLego) +
+    (cantDamas * precioDamas) + (cantLaberinto * precioLaberinto);
+
+    if (cantJuguetes < 10) {
+        descuento = costo * 0.035;
+        importe = costo - descuento;
+    } else if (cantJuguetes >= 10 && cantJuguetes <= 20){
+        descuento = costo * 0.07;
+        importe = costo - descuento;
     } else {
-        let descuento = pago_i*9.5/100;
-        let pago_f = pago_i - descuento;
-
-        p_pago.innerText = pago_f.toFixed(2);
+        descuento = costo * 0.095;
+        importe = costo - descuento;
     }
+    
+    
+    valorCompra.value = "S/ "+ costo.toFixed(2);
+    valorDescuento.value = "S/ "+ descuento.toFixed(2);
+    valorPago.value = "S/ "+ importe.toFixed(2);
+    
 }
