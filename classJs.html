@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="" href="./img/favicon-16x16.png">
+    <meta name="description" content="Curso de Js Avanzado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- CSS del proyecto -->
+    <link rel="stylesheet" type="text/css" href="./css/classJs.css">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>Clases JS</title>
+</head>
+<body>
+    <header>
+        <img src="./img/talent_logo_purple.png" alt="logo" width="150px">
+    </header>
+
+    <main>
+        <section class="generalBox">
+            <section class="boxTitle">
+                <h3 class="titulo">Calculadora salarial</h3>
+                <p>Ingrese datos del empleado.</p>
+            </section>
+
+            <section class="boxParametros">
+            <section class="boxA">
+                <section class="parametro uno">
+                    <label for="txtCodigo">Código:</label>
+                    <input type="text" id="txtCodigo">
+                </section>
+    
+                <section class="parametro dos">
+                    <label for="txtNombre">Nombre:</label>
+                    <input type="text" id="txtNombre">
+                </section>
+    
+                <section class="parametro tres">
+                    <label for="txtApellido">Apellido:</label>
+                    <input type="text" id="txtApellido">
+                </section>
+            </section>
+           
+            <section class="boxB">
+                <section class="parametro cuatro">
+                    <label for="txtCorreo">Correo:</label>
+                    <input type="email" id="txtCorreo">
+                </section>
+    
+                <section class="parametro cinco">
+                    <label for="selCargo">Cargo:</label>
+                    <select id="selCargo">
+                        <option value="">Seleccionar</option>
+                        <option value="Jefe">Jefe</option>
+                        <option value="Analista">Analista</option>
+                        <option value="Programador">Programador</option>
+                        <option value="Soporte">Soporte</option>
+                        <option value="Asistente">Asistente</option>
+                    </select>
+                </section>
+
+                <section class="parametro seis">
+                    <input class="boton" type="submit" value="Calcular" id="btnCalcular"/>
+                </section>
+
+            </section>
+
+        </section>
+            
+
+        <section class="boxResultado">
+
+            <section class="boxContenido">
+                
+                <p class="result" id="resultado"></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cargo</td>
+                        <td id="resultCargo"></td>
+                    </tr>
+                    <tr>
+                        <td>Sueldo Bruto</td>
+                        <td id="resultSueldoBruto"></td>
+                    </tr>
+                    <tr>
+                        <td>Descuento</td>
+                        <td id="resultDescuento"></td>
+                    </tr>
+                    <tr>
+                        <td>Sueldo Neto</td>
+                        <td id="resultSueldoNeto"></td>
+                    </tr>
+                </tbody>
+                </table>
+            </section>
+            
+        </section>
+            
+        </section>
+    </main>
+</body>
+</html>
+<script src="./js/classJs.js"></script>

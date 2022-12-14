@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0px 20px 20px;
+}
+
+.boxTitle {
+    padding: 20px 0px 15px 20px;    
+}
+
+h3 {
+    font-weight: 700;
+    color: rgb(73, 73, 73);
+}
+
+.boxParametros {
+    padding: 0px 0px 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.parametro {
+    flex-direction: column;
+    display: flex;
+    margin-right: 50px;
+}
+
+.boxA, .boxB {
+    display: flex;
+}
+
+input {
+    border: none;
+    background-color: rgb(243, 243, 243);
+    border-radius: 50px;
+    height: 40px;
+    padding-left: 15px;
+}
+
+#selCargo {
+    border: none;
+    background-color: rgb(243, 243, 243);
+    border-radius: 50px;
+    height: 40px;
+    padding-left: 15px;
+}
+
+.seis {
+    display: flex;
+    justify-content: end;
+}
+
+.boton {
+    background-color: orangered;
+    color: white;
+    width: 150px;
+    padding: 0;
+    font-weight: 500;
+}
+
+label {
+    margin-top: 15px;
+}
+
+.boxResultado {
+    background-color: rgb(235, 235, 235);
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.result {
+    font-size: 1.2rem;
+    color: rgb(82, 31, 129);
+    font-weight: 500;
+}
+
+.boxContenido {
+    background-color: white;
+    width: max-content;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px
+}
+
+td {
+    padding-right: 30px;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+    padding-top: 5px;
+
+}
+
+th {
+    border-bottom: 2px gray solid;
+    padding-bottom: 5px;
+}
