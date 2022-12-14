@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="" href="./img/favicon-16x16.png">
+    <meta name="description" content="Curso de Js Avanzado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- CSS del proyecto -->
+    <link rel="stylesheet" type="text/css" href="./css/constructores.css">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>constructor JS</title>
+</head>
+<body>
+    <header>
+        <img src="./img/certus.png" alt="logo" width="150px">
+    </header>
+
+    <main>
+        <section class="generalBox">
+            <section class="boxTitle">
+                <h3 class="titulo">Calculadora de Promedio</h3>
+                <p>Ingrese datos del alumno.</p>
+            </section>
+
+            <section class="boxParametros">
+            <section class="boxA">
+                <section class="parametro uno">
+                    <label for="txtCodigo">Código:</label>
+                    <input type="text" id="txtCodigo">
+                </section>
+    
+                <section class="parametro dos">
+                    <label for="txtNombre">Nombre:</label>
+                    <input type="text" id="txtNombre">
+                </section>
+    
+            </section>
+           
+            <section class="boxB">
+
+                <section class="parametro tres">
+                    <label for="txtApellido">Nota 1</label>
+                    <input type="number" id="nota1">
+                </section>
+
+                <section class="parametro cuatro">
+                    <label for="txtCorreo">Nota 2</label>
+                    <input type="number" id="nota2">
+                </section>
+
+                <section class="parametro cinco">
+                    <label for="txtCorreo">Nota 3</label>
+                    <input type="number" id="nota3">
+                </section>
+
+                <section class="parametro seis">
+                    <label for="txtCorreo">Nota 4</label>
+                    <input type="number" id="nota4">
+                </section>
+    
+                
+
+                <section class="parametro siete">
+                    <input class="boton" type="button" value="Calcular" id="btnCalcular" onclick="calcularPromedio()"/>
+                </section>
+
+            </section>
+
+        </section>
+            
+            
+        </section>
+    </main>
+</body>
+</html>
+<script src="./js/constructores.js"></script>
