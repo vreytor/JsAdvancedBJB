@@ -16,7 +16,7 @@
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <title>Validación de Formularios</title>
+    <title>Validación Jquery</title>
 </head>
 <body>
     <main class="container-fluid">
@@ -30,24 +30,24 @@
             <form class="row" id="form">    
                 <section class="bloque col-md-12">
                     <label for="txtNombre">Nombre de usuario<span>*</span></label>
-                    <input type="text" id="txtNombre" placeholder="Usuario" required minlength="4" maxlength="16">
+                    <input type="text" id="txtNombre" name="txtNombre" placeholder="Usuario" required>
                     <small id="valNombre"></small>
                 </section>
                 
                 <section class="bloque col-12">
                     <label for="txtCorreo">Email<span>*</span></label>
-                    <input type="email" id="txtCorreo" placeholder="mail@website.com" required>
+                    <input type="email" id="txtCorreo" name="txtCorreo" placeholder="mail@website.com" required>
                     <small id="valCorreo"></small>
                 </section>
                 <section class="bloque col-12">
-                    <label for="txtCorreo">Teléfono<span>*</span></label>
-                    <input type="number" id="txtPhone" placeholder="987 654 321" required minlength="9">
+                    <label for="txtPhone">Teléfono<span>*</span></label>
+                    <input type="text" id="txtPhone" name="txtPhone" placeholder="987 654 321" required minlength="9" maxlength="9">
                     <small id="valPhone"></small>
                 </section>
                 
                 <section class="bloque col-12">
-                    <label for="txtCorreo">Contraseña<span>*</span></label>
-                    <input type="password" id="password" placeholder="Min. 8 caracteres" required minlength="8">
+                    <label for="password">Contraseña<span>*</span></label>
+                    <input type="password" id="password" name="password" placeholder="Min. 8 caracteres" required minlength="8">
                     <small id="valPassword"></small>
                 </section>
                                 
