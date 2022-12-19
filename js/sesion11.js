@@ -47,7 +47,7 @@ function filtrarPorType(argumento){
 let pokemonMaster = {
     id: 1,
     name: "Reytor",
-    created_date: "2022/12/16",
+    created_date: new Date(),
     pokemon: []
 }
 
