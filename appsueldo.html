@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- CSS del proyecto -->
-    <link rel="stylesheet" type="text/css" href="./css/validacion.css">
+    <link rel="stylesheet" type="text/css" href="./css/appSueldo.css">
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
@@ -19,38 +19,50 @@
 <body>
     <main class="container-fluid">
         <article>
-            <section>
-                <h3 class="title">App sueldo</h3>
-                <p>Ingrese sus datos para calcular su sueldo</p>
+            <h3>App Sueldo</h3>
+            <section class="conjunto">
+                <label for="horas">Horas trabajadas:</label>
+                <input type="number" class="horas" id="horas">
             </section>
-
-            <section>
-                <label for="txtNombre">Nombre:</label>
-                <input type="text" id="txtNombre">
-            </section>
-
-            <section>
-                <label for="txtNombre">Horas trabajadas:</label>
-                <input type="number" id="cantHoras">
-            </section>
-
-            <section>
-                <label for="categTrabajador">Categoría:</label>
-                <select name="" id="categTrabajador">
-                    <option value="1">A</option>
-                    <option value="2">B</option>
-                    <option value="3">C</option>
+            <section class="conjunto">
+                <label for="categorias">Categoría a la que pertenece:</label>
+                <select id="categorias">
+                    <option value="">Selecciona una opción</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
                 </select>
             </section>
-
-            <section>
-                <label for="timeService">Años de servicio:</label>
-                <input type="number" id="timeService">
+            <section class="conjunto">
+                <label for="años">Años de servicio:</label>
+                <input type="number" class="años" id="años">
             </section>
-
-            <input type="button" class="btnEnviar" >
+            <section>
+                <table class="table" style="vertical-align: middle;">
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="2" class="table-secondary">Detalles</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Sueldo básico</th>
+                            <td><p id="p_0"></p></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bonificación</th>
+                            <td><p id="p_1"></p></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sueldo neto</th>
+                            <td><p id="p_2"></p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <button id="btn_pago" class="boton">Convertir</button>
         </article>
     </main>    
 </body>
 </html>
-<script src="./js/validacion.js"></script>
+<script src="./js/appsueldo.js"></script>
