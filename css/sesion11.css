@@ -1,0 +1,29 @@
+main {
+    background-color: rgb(174, 227, 248);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.logoBox {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.pokedex {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(88, 156, 168, 0.3);
+}
+
+.pokedexTable {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(88, 156, 168, 0.3);
+}
+
+p {
+    color: gold;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
