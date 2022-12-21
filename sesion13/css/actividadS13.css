@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+}
+
+main {
+    background-color: rgb(44, 101, 224);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    display: inline-block;
+    width: 35%;
+    text-align: left;
+}
+
+input {
+	padding: 2px 2px;
+	width: 30%;
+	margin: 8px 0;
+    border-radius: 4px;
+}
+
+label, input{
+    padding: 2px;
+}
+
+p{
+    margin: 0px;
+    padding-top: 1px;
+}
+
+
+.boton{
+    background-color: rgb(44, 101, 224);
+    border: none;
+    border-radius: 0;
+    margin-top: 15px;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    height: 20%;
+    cursor: pointer;
+}
+.titulo{
+    font-size:30px;
+    font-weight: bold;
+    color: black;
+}
+
+.result{
+    border-collapse: collapse;
+    background-color: rgb(231, 199, 206);
+    padding: 6px 0px;
+    font-weight: bold;
+    color: rgb(15, 29, 29);
+}
+
+.result2{
+    border-collapse: collapse;
+    background-color: rgb(233, 233, 233);
+    padding: 6px 0px;
+    margin: 10px 0px;
+    font-weight: bold;
+    color: rgb(15, 29, 29);
+}
+
+.actividad{
+    background-color: rgb(255, 255, 255);
+    min-width: 40%;
+	padding: 40px;	
+    text-align: center;   
+}
