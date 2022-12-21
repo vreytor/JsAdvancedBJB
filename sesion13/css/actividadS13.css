@@ -23,11 +23,12 @@ input {
 	padding: 2px 2px;
 	width: 30%;
 	margin: 8px 0;
-    border-radius: 4px;
+    border-radius: 0px;
+    border: solid 2px gainsboro;
 }
 
 label, input{
-    padding: 2px;
+    padding: 5px;
 }
 
 p{
@@ -48,6 +49,7 @@ p{
     height: 20%;
     cursor: pointer;
 }
+
 .titulo{
     font-size:30px;
     font-weight: bold;
@@ -55,25 +57,25 @@ p{
 }
 
 .result{
-    border-collapse: collapse;
-    background-color: rgb(231, 199, 206);
-    padding: 6px 0px;
+
+    padding: 10px;
     font-weight: bold;
-    color: rgb(15, 29, 29);
+    color: black;
 }
 
 .result2{
     border-collapse: collapse;
     background-color: rgb(233, 233, 233);
-    padding: 6px 0px;
+    padding: 15px 0px;
     margin: 10px 0px;
-    font-weight: bold;
-    color: rgb(15, 29, 29);
+    color: black;
 }
 
 .actividad{
     background-color: rgb(255, 255, 255);
     min-width: 40%;
 	padding: 40px;	
-    text-align: center;   
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(16, 33, 70, 0.6);   
 }

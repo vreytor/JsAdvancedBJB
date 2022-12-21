@@ -16,30 +16,33 @@
     <title>Tarea - Sesión 14</title>
 </head>
 <body>
-    <section class="actividad" ng-app="MyApp" ng-controller="formControl">
-        <form novalidate>
-           <h2 class="titulo">Actividad asincrónica N° 14</h2>
-            <p>Ingresa tus datos para calcular sueldo bruto, descuento y salario neto.</p>
-            <p>
-                <label>Codigo</label>
-                <input type="number" ng-model="empleado.codigo">
-            </p>
-            <p>
-                <label>Horas Trabajadas</label>
-                <input type="number" ng-model="empleado.horas">
-            </p>
-            <p>
-                <label>Tarifa por Hora</label>
-                <input type="number" ng-model="empleado.tarifa">
-            </p>
-            <input class="boton" type="button" ng-click="calcularSalario()" value="Calcular">
-        </form>
-        <section class="result">
-            <p>Sueldo Bruto: {{empleado.sueldoBruto}}</p>
-            <p>Descuento: {{empleado.descuento}}</p>
-            <p>Sueldo Neto: {{empleado.sueldoNeto}}</p>
+    <main>
+        <section class="actividad" ng-app="MyApp" ng-controller="formControl">
+            <form novalidate>
+               <h2 class="titulo">Sesión 14 - Asíncrona</h2>
+                <p>Ingresa tus datos para calcular sueldo bruto, descuento y salario neto.</p>
+                <p>
+                    <label>Codigo</label>
+                    <input type="number" ng-model="empleado.codigo">
+                </p>
+                <p>
+                    <label>Horas Trabajadas</label>
+                    <input type="number" ng-model="empleado.horas">
+                </p>
+                <p>
+                    <label>Tarifa por Hora</label>
+                    <input type="number" ng-model="empleado.tarifa">
+                </p>
+                <input class="boton" type="button" ng-click="calcularSalario()" value="Calcular">
+            </form>
+            <section class="result">
+                <p>Sueldo Bruto: {{empleado.sueldoBruto}}</p>
+                <p>Descuento: {{empleado.descuento}}</p>
+                <p>Sueldo Neto: {{empleado.sueldoNeto}}</p>
+            </section>
         </section>
-    </section>
+    </main>
+    
 </body>
 </html>
 <script src="js/actividadS14.js"></script>
